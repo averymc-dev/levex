@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Jomhuria-Regular
+font link: https://fonts.google.com/specimen/Jomhuria
+font author: KB Studio
+font author site: http://tarobish.github.io/Jomhuria/
+Slogan Font: Neuton-Extralight.ttf
+
+icon designer: Bonegolem
+icon designer link: /bonegolem
+        
+{"bg":"transparent","icon-gradient-0":"#288B58","icon-gradient-1":"#1522F1","font":"#000000","slogan":"#141414"}
+      

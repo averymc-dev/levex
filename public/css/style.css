@@ -1,0 +1,22 @@
+.login {
+    margin-top: 10%;
+    border-radius: 5px;
+    background-color:azure;
+    padding-bottom: 5%;
+    padding-top:5%;
+}
+
+body {
+    background-color: #adbed8;
+}
+
+img {
+    width:50%;
+	height:10%;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.btn-primary {
+    background-color: #1522f1;
+}
