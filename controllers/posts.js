@@ -29,15 +29,16 @@ module.exports = {
   createPost: async (req, res) => {
     try {
       // Upload image to cloudinary
-      const result = await cloudinary.uploader.upload(req.file.path);
+      // const result = await cloudinary.uploader.upload(req.file.path);
 
       await Post.create({
-        title: req.body.title,
-        image: result.secure_url,
-        cloudinaryId: result.public_id,
-        caption: req.body.caption,
-        likes: 0,
+        location: req.body.location,
+        // image: result.secure_url,
+        // cloudinaryId: result.public_id,
+        issue: req.body.issue,
+        details: req.body.details,
         user: req.user.id,
+        completed: false,
       });
       console.log("Post has been added!");
       res.redirect("/profile");
@@ -50,10 +51,10 @@ module.exports = {
       await Post.findOneAndUpdate(
         { _id: req.params.id },
         {
-          $inc: { likes: 1 },
+          completed: true, // Marks job as completed
         }
       );
-      console.log("Likes +1");
+      console.log("Job marked as complete");
       res.redirect(`/post/${req.params.id}`);
     } catch (err) {
       console.log(err);
