@@ -12,11 +12,18 @@ body {
 
 img {
     width:50%;
-	height:10%;
+	height:15%;
 	object-fit: cover;
 	overflow: hidden;
 }
 
 .btn-primary {
     background-color: #1522f1;
+}
+
+.job-page, .post-page {
+    border: 2px solid #278a5b;
+    background-color: #defff3;
+    border-radius: 5px;
+    text-align: center;
 }
