@@ -58,6 +58,6 @@ app.use("/", mainRoutes);
 app.use("/post", postRoutes);
 
 //Server Running
-app.listen(process.env.PORT || 7777, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Levex server is running on Port ${process.env.PORT}`);
 });
