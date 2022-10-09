@@ -4,6 +4,7 @@
     background-color:azure;
     padding-bottom: 5%;
     padding-top:5%;
+    box-shadow: 5px 5px rgba(90, 90, 90, 0.577);
 }
 
 body {
@@ -19,6 +20,7 @@ img {
 
 .btn-primary {
     background-color: #1522f1;
+    box-shadow: 3px 3px rgba(90, 90, 90, 0.577);
 }
 
 .job-page, .post-page {
