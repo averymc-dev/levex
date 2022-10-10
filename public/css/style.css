@@ -41,12 +41,10 @@ img {
 }
 
 .post-page {
-    border: 2px solid red;
 }
 
 
 .post-page > .container > div {
-    border: 2px solid indianred;
     flex-direction: column;
 }
 
@@ -55,7 +53,6 @@ span {
 }
 
 div.col-6.mt-5 {
-    border: 2px solid lawngreen;
     display: flex;
     justify-content: space-around;
 }
@@ -70,6 +67,5 @@ div.col-6.mt-5 {
 }
 
 .job-info > div:first-of-type {
-    border: 2px solid red;
     width: 75%;
 }
