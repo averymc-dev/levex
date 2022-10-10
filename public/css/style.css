@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .login {
     margin-top: 10%;
@@ -35,4 +38,38 @@ img {
 .text-center > span {
     font-family: 'Jomhuria', Arial, Helvetica, sans-serif;
     font-size: 48px;
+}
+
+.post-page {
+    border: 2px solid red;
+}
+
+
+.post-page > .container > div {
+    border: 2px solid indianred;
+    flex-direction: column;
+}
+
+span {
+    display: block;
+}
+
+div.col-6.mt-5 {
+    border: 2px solid lawngreen;
+    display: flex;
+    justify-content: space-around;
+}
+
+.job-info {
+    display: flex;
+    justify-content: center;
+}
+
+.col-6 {
+    width: 100%;
+}
+
+.job-info > div:first-of-type {
+    border: 2px solid red;
+    width: 75%;
 }
