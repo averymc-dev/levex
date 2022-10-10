@@ -1,7 +1,7 @@
 # Levex Computerized Maintenance Management System
 http://levexmms.herokuapp.com
 
-![Levex MMS](./public/imgs/Screenshot%202022-10-09%20at%2014-09-14%20Levex%20MMS.png)
+![Levex MMS](./public/imgs/Screenshot%202022-10-09%20at%2014-09-14%20Levex%20MMS-min.png)
 
 ## How It's Made:
 **Tech Used:** Node.js, MongoDB, Express, JavaScript, CSS, EJS
