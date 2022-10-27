@@ -1,55 +1,56 @@
-<div class="container login">
-  <%- include('partials/header') -%>
-  <div class="container">
-    <div class="row mt-5">
-        <div class="col-6">
-            <div class="mt-5">
-              <h2>Add a request</h2>
-              <form action="/post/createPost" enctype="multipart/form-data" method="POST">
-                <div class="mb-3">
-                    <label for="location" class="form-label">Location</label>
-                    <input type="text" class="form-control" id="location" name="location">
+<%- include('partials/header') -%>
+  <div class="container login">
+  
+    <div class="container">
+      <div class="row mt-5">
+          <div class="col-6">
+              <div class="mt-5">
+                <h3>Add a request</h3>
+                <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+                  <div class="mb-3">
+                      <label for="location" class="form-label">Location</label>
+                      <input type="text" class="form-control" id="location" name="location">
+                  </div>
+                  <div class="mb-3">
+                    <label for="issue" class="form-label">Issue</label>
+                    <input type="text" class="form-control" id="issue" name="issue">
                 </div>
-                <div class="mb-3">
-                  <label for="issue" class="form-label">Issue</label>
-                  <input type="text" class="form-control" id="issue" name="issue">
+                  <div class="mb-3">
+                    <label for="details" class="form-label">Details</label>
+                    <textarea class="form-control" id="details" name="details"></textarea>
+                  </div>
+                  <!-- <div class="mb-3">
+                    <label for="imgUpload" class="form-label">Image</label>
+                    <input type="file" class="form-control" id="imageUpload" name="file">
+                  </div> -->
+                  <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+                </form>
               </div>
-                <div class="mb-3">
-                  <label for="details" class="form-label">Details</label>
-                  <textarea class="form-control" id="details" name="details"></textarea>
-                </div>
-                <!-- <div class="mb-3">
-                  <label for="imgUpload" class="form-label">Image</label>
-                  <input type="file" class="form-control" id="imageUpload" name="file">
-                </div> -->
-                <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
-              </form>
-            </div>
-        </div>
-        <div class="col-6">
-          <div class="mt-5">
-            <h2>Your submitted jobs:</h2>
-            <ul class="row list-unstyled">
-            <% for(var i=0; i<posts.length; i++) {%>
-              <li class="col-6 justify-content-between mt-5">
-                <a href="/post/<%= posts[i]._id%>">
-                  <span><%= posts[i].location%></span>
-                </a>
-              </li>
-            <% } %>
-            </ul>
-        </div>
-          <div class="row justify-content-center mt-5">
-            <a class="btn btn-primary" href="/feed">Return to Job Page</a>
+          </div>
+          <div class="col-6">
+            <div class="mt-5">
+              <h3>Your submitted jobs:</h3>
+              <ul class="row list-unstyled">
+              <% for(var i=0; i<posts.length; i++) {%>
+                <li class="col-6 justify-content-between mt-5">
+                  <a href="/post/<%= posts[i]._id%>">
+                    <span><%= posts[i].location%></span>
+                  </a>
+                </li>
+              <% } %>
+              </ul>
+          </div>
+            <div class="row justify-content-center mt-5">
+              <a class="btn btn-primary" href="/feed">Return to Job Page</a>
+            </div>  
+          </div>
+          <div>
+            <p><strong>Your Name</strong>: <%= user.userName %></p>
+            <p><strong>Email</strong>: <%= user.email %></p>
+            <a href="/logout" class="col-3 btn btn-primary">Logout</a>
           </div>  
         </div>
-        <div>
-          <p><strong>Your Name</strong>: <%= user.userName %></p>
-          <p><strong>Email</strong>: <%= user.email %></p>
-          <a href="/logout" class="col-3 btn btn-primary">Logout</a>
-        </div>  
       </div>
     </div>
   </div>
-  <%- include('partials/footer') -%>
-</div>
+<%- include('partials/footer') -%>

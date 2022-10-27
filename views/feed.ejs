@@ -1,37 +1,37 @@
-<div class="container login">
-  <%- include('partials/header') -%>
-  <main class="job-page"><div class="overflow-x-auto">
-    <table class="table table-zebra w-full">
-      <!-- head -->
-      <thead>
-        <tr>
-          <th></th>
-          <th>Name</th>
-          <th>Location</th>
-          <th>Issue</th>
-          <th>Completed</th>
-        </tr>
-      </thead>
-      
-      <tbody>
-        <!-- rows -->
-        <% for(var i=0; i<posts.length; i++) {%>
-        <tr>
-          <th>1</th>
-          <td> <%= posts[i].user %> </td>
-          <td> 
-            <a href="/post/<%= posts[i]._id%>">
-              <span><%= posts[i].location%></span>
-            </a>
-          </td>
-          <td> <%= posts[i].issue %> </td>
-          <td> <%= posts[i].completed %> </td>
-        </tr>
-        <%}%>
+<%- include('partials/header') -%>
+  <div class="container login">
+    <main class="job-page"><div class="overflow-x-auto">
+      <table class="table table-zebra w-full">
+        <!-- head -->
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Issue</th>
+            <th>Completed</th>
+          </tr>
+        </thead>
         
-      </tbody>
-      
-    </table>
-  </div></main>
-  <%- include('partials/footer') -%>
-</div>
+        <tbody>
+          <!-- rows -->
+          <% for(var i=0; i<posts.length; i++) {%>
+          <tr>
+            <th>1</th>
+            <td> <%= posts[i].user %> </td>
+            <td> 
+              <a href="/post/<%= posts[i]._id%>">
+                <span><%= posts[i].location%></span>
+              </a>
+            </td>
+            <td> <%= posts[i].issue %> </td>
+            <td> <%= posts[i].completed %> </td>
+          </tr>
+          <%}%>
+          
+        </tbody>
+        
+      </table>
+    </div></main>
+  </div>
+<%- include('partials/footer') -%>
