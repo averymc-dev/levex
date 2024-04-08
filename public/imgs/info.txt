@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: clarikagrot-medium
+font link: https://www.fontspring.com/fonts/the-refinery/clarika/clarika-grotesque-medium
+font author: The Refinery
+font author site: https://www.refinerybrand.com/
+Slogan Font: Questrial-Regular.otf
+
+icon designer: Cris Dobbins
+icon designer link: /crisdobbins
+        
+
+fontColor: {"gradient-0":"#2274A5","gradient-1":"#4CB8E8"}
+bgColor: {"hex":"transparent"}
+iconColor: {"gradient-0":"#2274A5","gradient-1":"#4CB8E8"}
+sloganColor: {"hex":"#000000"}
+      
