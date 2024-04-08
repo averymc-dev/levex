@@ -1,40 +1,52 @@
 <%- include('partials/header') -%>
 
 <main class="container">
-  <div class="row justify-content-center">
-    <section class="col-6 mt-5">
-      <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
-      <div class="alert alert-danger"><%= el.msg %></div>
-      <% }) %> <% } %> <% if (locals.messages.info) { %> <%
-      messages.info.forEach( el => { %>
-      <div class="alert alert-info"><%= el.msg %></div>
-      <% }) %> <% } %>
-      <form action="/login" method="POST">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            name="email"
-          />
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="max-w-md w-full p-6 bg-white rounded-lg shadow-lg">
+        <div class="flex justify-center mb-8">
+            <img src="/imgs/tools.png" alt="Logo" class="w-30 h-20">
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-            name="password"
-          />
+        <!-- <h1 class="text-2xl font-semibold text-center text-gray-500 mt-8 mb-6">Login</h1> -->
+
+        <!--Checks for errors of login credentials-->
+        <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
+        <div class="alert alert-danger"><%= el.msg %></div>
+        <% }) %> <% } %> <% if (locals.messages.info) { %> <%
+        messages.info.forEach( el => { %>
+        <div class="alert alert-info"><%= el.msg %></div>
+        <% }) %> <% } %>
+        
+        <!--Login form-->
+        <form action="/login" method="POST">
+            <div class="mb-6">
+                <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    name="email"
+                />
+            </div>
+            <div class="mb-6">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    name="password"
+                />
+                <a href="#" class="block text-right text-xs text-cyan-600 mt-2">Forgot your password?</a>
+            </div>
+            <button type="submit" class="w-32 bg-gradient-to-r from-sky-400 to-sky-700 text-white py-2 rounded-lg mx-auto block focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 mt-4 mb-6">Login</button>
+        </form>
+        
+        <div class="text-center">
+            <p class="text-sm">Don't have an account? <a href="/signup" class="text-cyan-600">Register now</a></p>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </section>
-  </div>
+        <p class="text-xs text-gray-600 text-center mt-10">&copy; 2024 Levex</p>
+    </div>
+</div>
 </main>
 
 <%- include('partials/footer') -%>
