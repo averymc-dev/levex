@@ -27,14 +27,18 @@
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="container h-16 flex justify-around">
-      <div class="align-baseline">
+    <header class="container h-full flex justify-between items-center">
+      <div>
         <div>
-          <h1><a href="/profile">Levex</a></h1>
+          <h1 class="leading-8"><a href="/profile">Levex</a></h1>
         </div>
-        <span class="questrial-regular">Efficiency Operations</span>
+        <span class="questrial-regular text-xs uppercase tracking-widest">Efficiency Operations</span>
       </div>
-      <div><p>text</p></div>
+      <div class="basis-1/2 flex justify-end"> <!-- add local roboto mono font to these links and further texts -->
+        <a href="/feed" class="px-2 roboto-mono">Work orders</a>
+        <a href="/profile" class="px-2 roboto-mono">Your profile</a>
+        <a href="#" class="px-2 roboto-mono">Logout</a>
+      </div>
     </header>
   </body>
 </html>
