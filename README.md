@@ -1,20 +1,16 @@
-# Install
+# Levex - A modern CMMS <a href='#'>Try here</a>
 
-`npm install`
+### A sleek take on maintenance management systems
 
----
+## Tech Used: 
+<!-- ![JAVASCRIPT BADGE](https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript)![PHASER BADGE](https://img.shields.io/static/v1?label=|&message=PHASER.JS&color=285f65&style=plastic&logo=phaser) -->
 
-# Things to add
+The site is built using Tailwind UI, and EJS for templating. The focus was on building a simple UI that makes a lot of data more readable.
 
-- Create a `.env` file in config folder and add the following as `key = value`
-  - PORT = 2121 (can be any port example: 3000)
-  - DB_STRING = `your database URI`
-  - CLOUD_NAME = `your cloudinary cloud name`
-  - API_KEY = `your cloudinary api key`
-  - API_SECRET = `your cloudinary api secret`
+## Optimizations
 
----
+When I improve this project, I would make a landing page for the product instead of going directly to the login.
 
-# Run
+## Lessons Learned:
 
-`npm start`
+I have learned that the systems used for a successful product don't require complexity and can often be very simple tools.
