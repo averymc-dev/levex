@@ -10,7 +10,7 @@ The site is built using Tailwind UI, and EJS for templating. The focus was on bu
 
 ## Optimizations
 
-When I improve this project, I would make a landing page for the product instead of going directly to the login.
+To improve this project, I would further add accessibility features.
 
 ## Lessons Learned:
 
