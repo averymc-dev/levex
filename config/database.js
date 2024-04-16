@@ -6,7 +6,7 @@ const PORT = process.env.PORT
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URI, {
+    const conn = await mongoose.connect(process.env.DB_STRING, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,
@@ -20,16 +20,16 @@ const connectDB = async () => {
   }
 };
 
-//Routes go here
-app.all('*', (req,res) => {
-  res.json({"every thing":"is awesome"})
-})
+// //Routes go here
+// app.all('*', (req,res) => {
+//   res.json({"every thing":"is awesome"})
+// })
 
-//Connect to the database before listening
-connectDB().then(() => {
-  app.listen(PORT, () => {
-      console.log("listening for requests");
-  })
-})
+// //Connect to the database before listening
+// connectDB().then(() => {
+//   app.listen(PORT, () => {
+//       console.log("listening for requests");
+//   })
+// })
 
 module.exports = connectDB;
