@@ -4,7 +4,7 @@
   "description": "100Devs Social Network",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "cd api && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwind": "tailwindcss -o public/css/output.css --watch"
   },
