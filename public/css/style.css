@@ -27,7 +27,7 @@
   src: url('../fonts/roboto-mono/roboto-mono-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-h1{
+h1 {
   font-family: "clarikagrot-medium", Arial, Helvetica, sans-serif;
   font-size: 2.25rem;
   filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
@@ -35,4 +35,8 @@ h1{
 
 .roboto-mono {
   font-family: 'Roboto Mono';
+}
+
+h2 {
+  font-size: 2rem
 }
