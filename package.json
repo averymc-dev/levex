@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind": "tailwindcss -o public/css/output.css --watch"
+    "tailwind": "tailwindcss -o public/css/output.css --watch",
+    "devstart": "nodemon server.js"
   },
   "author": "",
   "license": "MIT",
